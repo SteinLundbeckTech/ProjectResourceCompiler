@@ -1,77 +1,213 @@
 {
   "projects": [
     {
-      "name": "Creator",
-      "basePath": ".//SL_TECH//DEV//Creator//Creator",
-      "stylePath": "<base>//STYLE",
-      "styleOutPath": "<base>//_Build//STYLE",
-      "styleBundlePath": "<base>//_Build//Creator.css",
-      "scriptPath": "<base>//SCRIPT",
-      "scriptOutPath": "<base>//_Build//SCRIPT",
-      "scriptBundlePath": "<base>//_Build//Creator.js"
-    },
-    {
-      "name": "Creator Components",
-      "basePath": ".//SL_TECH//DEV//Creator//Creator.Other//Creator.Components",
-      "styleOutPath": "<base>//_Build//STYLE",
-      "scriptOutPath": "<base>//_Build//SCRIPT",
-      "styleBundlePath": "<base>//_Build//Creator.Components.css",
-      "scriptBundlePath": "<base>//_Build//Creator.Components.js"
-    },
-    {
-      "name": "Assets Validation",
-      "basePath": ".//SL_TECH//DEV//Assets//SL.Assets.Validation",
-      "styleOutPath": "<base>//_Build//STYLE",
-      "scriptOutPath": "<base>//_Build//SCRIPT",
-      "styleBundlePath": "<base>//_Build//Creator.Validation.css",
-      "scriptBundlePath": "<base>//_Build//Creator.Validation.js"
-    },
-    {
-      "name": "SL Assets Core",
-      "basePath": ".//SL_TECH//DEV//Assets//SL.Assets.Core",
-      "stylePath": "<base>//STYLE",
-      "styleOutPath": "<base>//_Build//STYLE",
-      "styleBundlePath": "<base>//_Build//Assets.css",
-      "scriptPath": "<base>//SCRIPT",
-      "scriptOutPath": "<base>//_Build//SCRIPT",
-      "scriptBundlePath": "<base>//_Build//Assets.js"
-    },
-    {
-      "name": "SL Food Collective",
-      "basePath": ".//SL_TECH//Sites//SL.FoodCollective//SL.FoodCollective.Sunny"
-    },
-    {
-      "name": "SL Home Happy",
-      "basePath": ".//SL_TECH//Sites//SL.Home.Happy"
-    },
-    {
-      "name": "SL Blog Bluecloud",
-      "basePath": ".//SL_TECH//Sites//SL.Blog.Bluecloud"
-    },
-    {
-      "name": "SL Asseyd Storm",
-      "basePath": ".//SL_TECH//Sites//SL.Assets.Storm"
-    },
-    {
-      "name": "Creator home",
-      "basePath": ".//SL_TECH//Sites//Creator.Home.Backhand"
-    },
-    {
-      "name": "Timothy Toyo",
-      "basePath": ".//Client//TimothyToyo//LT.TimothyToyo.Angel"
+      "name": "Creator framework",
+      "path": ".//SL_TECH//DEV//Creator//Creator",
+      "outName": "Creator",
+      "actions": [
+        {
+          "type": "style",
+          "bundle": {
+            "targets": [
+              {
+                "path": ".//Client//KaurHudklinikk//SL.Kaur.WhiteFlow//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": ".//Client//Line_Eldor//LT.LineEldor.Asparges//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": "://Client//TimothyToyo//LT.TimothyToyo.Angel//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//Creator.Home.Backhand//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.Assets.Storm//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.Blog.Bluecloud//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.FoodCollective//SL.FoodCollective.Sunny//wwwroot//STYLE//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.Home.Happy//wwwroot//STYLE//Creator"
+              }
+            ]
+          }
+        },
+        {
+          "type": "script",
+          "bundle": {
+            "targets": [
+              {
+                "path": ".//Client//KaurHudklinikk//SL.Kaur.WhiteFlow//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": ".//Client//Line_Eldor//LT.LineEldor.Asparges//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": "://Client//TimothyToyo//LT.TimothyToyo.Angel//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//Creator.Home.Backhand//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.Assets.Storm//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.Blog.Bluecloud//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.FoodCollective//SL.FoodCollective.Sunny//wwwroot//SCRIPT//Creator"
+              },
+              {
+                "path": ".//SL_TECH//Sites//SL.Home.Happy//wwwroot//SCRIPT//Creator"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "default": {
-    "stylePath": "<base>//STYLE",
-    "styleOutPath": "<base>//wwwroot//STYLE",
-    "styleBundlePath": "<base>//wwwroot//STYLE//<name>.css",
-    "scriptPath": "<base>//SCRIPT",
-    "scriptOutPath": "<base>//wwwroot//SCRIPT",
-    "scriptBundlePath": "<base>//wwwroot//SCRIPT//<name>.js",
-    "reCompile": false,
-    "processStyle": true,
-    "processScript": true,
-    "bundleStyle": true,
-    "bundleScript": true
+    "enabled": true,
+    "append": true,
+    "projects": [
+      {
+        "enabled": true,
+        "name": "<_default>",
+        "path": "<_default>",
+        "outName": "<_default>",
+        "actions": [
+          {
+            "enabled": true,
+            "type": "style",
+            "reCompile": false,
+            "outName": "<_default>",
+            "targets": [
+              {
+                "enabled": true,
+                "path": "<base>//STYLE",
+                "recursive": true,
+                "minSuffix": ".min",
+                "out": {
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<base>//wwwroot//STYLE"
+                    }
+                  ]
+                },
+                "bundle": {
+                  "enabled": true,
+                  "minSuffix": ".min",
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<base>//wwwroot//STYLE"
+                    }
+                  ]
+                },
+                "ignore": {
+                  "enabled": true,
+                  "underscore": true,
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<_default>"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "type": "script",
+            "reCompile": false,
+            "outName": "<_default>",
+            "targets": [
+              {
+                "enabled": true,
+                "path": "<base>//SCRIPT",
+                "recursive": true,
+                "minSuffix": ".min",
+                "out": {
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<base>//wwwroot//SCRIPT"
+                    }
+                  ]
+                },
+                "bundle": {
+                  "enabled": true,
+                  "minSuffix": ".min",
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<base>//wwwroot//SCRIPT"
+                    }
+                  ]
+                },
+                "ignore": {
+                  "enabled": true,
+                  "underscore": true,
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<_default>"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "type": "image",
+            "reCompile": false,
+            "targets": [
+              {
+                "enabled": true,
+                "path": "<_default>",
+                "recursive": true,
+                "minSuffix": "-min",
+                "out": {
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<_default>"
+                    }
+                  ]
+                },
+                "ignore": {
+                  "enabled": true,
+                  "targets": [
+                    {
+                      "enabled": true,
+                      "path": "<_default>"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "type": "distro",
+            "reCompile": false,
+            "targets": [
+              {
+                "enabled": true,
+                "path": "<_default>",
+                "outPath": "<_default>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

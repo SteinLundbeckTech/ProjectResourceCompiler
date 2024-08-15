@@ -11,12 +11,11 @@ The Project Resource Compiler handles files of type:
 * JavaScript
 * Sass
 * Image
-* Custom
+* Distrobution
 
 ## Configuration
 
 Every project in configuration is highly customizable and let's you set exactly how to process a file and where to distribute them after processing.
-
 
 ---
 
