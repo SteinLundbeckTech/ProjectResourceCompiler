@@ -1,0 +1,77 @@
+{
+  "projects": [
+    {
+      "name": "Creator",
+      "basePath": ".//SL_TECH//DEV//Creator//Creator",
+      "stylePath": "<base>//STYLE",
+      "styleOutPath": "<base>//_Build//STYLE",
+      "styleBundlePath": "<base>//_Build//Creator.css",
+      "scriptPath": "<base>//SCRIPT",
+      "scriptOutPath": "<base>//_Build//SCRIPT",
+      "scriptBundlePath": "<base>//_Build//Creator.js"
+    },
+    {
+      "name": "Creator Components",
+      "basePath": ".//SL_TECH//DEV//Creator//Creator.Other//Creator.Components",
+      "styleOutPath": "<base>//_Build//STYLE",
+      "scriptOutPath": "<base>//_Build//SCRIPT",
+      "styleBundlePath": "<base>//_Build//Creator.Components.css",
+      "scriptBundlePath": "<base>//_Build//Creator.Components.js"
+    },
+    {
+      "name": "Assets Validation",
+      "basePath": ".//SL_TECH//DEV//Assets//SL.Assets.Validation",
+      "styleOutPath": "<base>//_Build//STYLE",
+      "scriptOutPath": "<base>//_Build//SCRIPT",
+      "styleBundlePath": "<base>//_Build//Creator.Validation.css",
+      "scriptBundlePath": "<base>//_Build//Creator.Validation.js"
+    },
+    {
+      "name": "SL Assets Core",
+      "basePath": ".//SL_TECH//DEV//Assets//SL.Assets.Core",
+      "stylePath": "<base>//STYLE",
+      "styleOutPath": "<base>//_Build//STYLE",
+      "styleBundlePath": "<base>//_Build//Assets.css",
+      "scriptPath": "<base>//SCRIPT",
+      "scriptOutPath": "<base>//_Build//SCRIPT",
+      "scriptBundlePath": "<base>//_Build//Assets.js"
+    },
+    {
+      "name": "SL Food Collective",
+      "basePath": ".//SL_TECH//Sites//SL.FoodCollective//SL.FoodCollective.Sunny"
+    },
+    {
+      "name": "SL Home Happy",
+      "basePath": ".//SL_TECH//Sites//SL.Home.Happy"
+    },
+    {
+      "name": "SL Blog Bluecloud",
+      "basePath": ".//SL_TECH//Sites//SL.Blog.Bluecloud"
+    },
+    {
+      "name": "SL Asseyd Storm",
+      "basePath": ".//SL_TECH//Sites//SL.Assets.Storm"
+    },
+    {
+      "name": "Creator home",
+      "basePath": ".//SL_TECH//Sites//Creator.Home.Backhand"
+    },
+    {
+      "name": "Timothy Toyo",
+      "basePath": ".//Client//TimothyToyo//LT.TimothyToyo.Angel"
+    }
+  ],
+  "default": {
+    "stylePath": "<base>//STYLE",
+    "styleOutPath": "<base>//wwwroot//STYLE",
+    "styleBundlePath": "<base>//wwwroot//STYLE//<name>.css",
+    "scriptPath": "<base>//SCRIPT",
+    "scriptOutPath": "<base>//wwwroot//SCRIPT",
+    "scriptBundlePath": "<base>//wwwroot//SCRIPT//<name>.js",
+    "reCompile": false,
+    "processStyle": true,
+    "processScript": true,
+    "bundleStyle": true,
+    "bundleScript": true
+  }
+}
