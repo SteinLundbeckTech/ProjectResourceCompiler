@@ -4,10 +4,10 @@
     @Latest     15.08.2024
 */
 
-const { ProcessTypes, ProcessProperties, OutputTypes, Path, Log, GetDefault, PRCUtility } = require("./PRCUtility");
+const { ProcessTypes, ProcessProperties, LogTypes, Logger, PRCUtility } = require("./PRCUtility");
+const fs = require("fs");
 
-let util = new PRCUtility();
+let utility = new PRCUtility();
 
-let test = GetDefault(ProcessTypes.Style, ProcessProperties.BundleEnabled);
+utility.Log("Loading Project Resource Compiler / Project count " + utility.Config.ProjectsJSON.length);
 
-WriteLine("test");
