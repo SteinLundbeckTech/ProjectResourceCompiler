@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "name": "Creator v2",
+            "path": "D:\\GoogleDrive\\Projects\\SLT\\src\\Creator\\SLT.Creator",
+            "actions": [
+                {
+                    "type": "style",
+                    "ignorePaths": [
+                        {
+                            "pattern": "@starts-with(_)"
+                        },
+                        {
+                            "pattern": "@folder(Shared)"
+                        }
+                    ]
+                },
+                {
+                    "type": "script",
+                    "ignorePaths": [
+                        {
+                            "pattern": "@starts-with(_)"
+                        },
+                        {
+                            "pattern": "@folder(Shared)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
