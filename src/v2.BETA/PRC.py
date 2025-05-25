@@ -3,8 +3,8 @@
     @Author               : Stein Lundbeck
     @Name                 : SLT Assets tools
     @Description          : Tool for managing web project resources like Sass, JavaScript, images and distribution of items
-    @Version              : 1.0.0.2
-    @Latest               : 24.05.2025
+    @Version              : 1.0.0.3
+    @Latest               : 25.05.2025
 """
 
 import json
@@ -50,11 +50,6 @@ def load_config():
         config = json.load(val)
     i = 0
     projects = {}
-    for p in config["projects"]:
-        projects[p["name"]] = Project(p, i)
-    load_projects(projects)
-    projects = {}
-    i = 0
     for p in config["projects"]:
         projects[p["name"]] = Project(p, i)
         i = up(i)
