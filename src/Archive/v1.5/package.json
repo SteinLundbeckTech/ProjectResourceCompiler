@@ -1,0 +1,28 @@
+{
+  "name": "sl-projectresourcecompiler",
+  "version": "1.0.3",
+  "description": "Auto-compile and minimize project resources like SASS, JavaScript, images and set up custom distrobution of resource files. Flexible configuration allows for customization to support any project and technology.",
+  "keywords": [
+    "web",
+    "app",
+    "site",
+    "website",
+    "javascript",
+    "sass",
+    "image",
+    "css",
+    "compile",
+    "minimize",
+    "bundle"
+  ],
+  "homepage": "https://github.com/SteinLundbeckTech/ProjectResourceCompiler",
+  "main": "ProjectResourceCompiler.js",
+  "files": [
+    "./ProjectResourceCompilerConfig.json"
+  ],
+  "scripts": {
+    "PRC": "node ProjectResourceCompiler.js"
+  },
+  "author": "Stein Lundbeck",
+  "license": "MIT"
+}
