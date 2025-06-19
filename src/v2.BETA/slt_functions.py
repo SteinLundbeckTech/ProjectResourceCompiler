@@ -9,8 +9,10 @@
 import os
 from datetime import datetime
 
-def print_str(val):
+def print_str(val, clear = False):
     """Prints string with current date and time"""
+    if (clear):
+        cls()
     print(f"{datetime.now()}\t{val}")
 
 def input_str(val):
@@ -56,13 +58,14 @@ def add_suffix(filename, suffix = "min"):
     return f"{filename[:filename.rfind(".")]}.{suffix}.{filename[filename.rfind("."):]}"
 
 def cls():
+    """Clears the console"""
     os.system("cls")
 
-def diff_second(start_time, end_time):
+def diff_second(start_time, end_time = datetime.now()):
     """Gets difference in secounds between two times"""
     return (end_time - start_time).total_seconds()
 
-def diff_minute(start_time, end_time):
+def diff_minute(start_time, end_time = datetime.now()):
     """Gets difference in minutes between two times"""
     diff = diff_second(start_time, end_time)
     if diff >= 60:

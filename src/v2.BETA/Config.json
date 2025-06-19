@@ -27,6 +27,75 @@
                     ]
                 }
             ]
+        },
+                {
+            "name": "SLT Assets",
+            "path": "D:\\GoogleDrive\\Projects\\SLT\\src\\Assets\\SLT.Assets",
+            "actions": [
+                {
+                    "type": "style",
+                    "ignorePaths": [
+                        {
+                            "pattern": "@starts-with(_)"
+                        },
+                        {
+                            "pattern": "@folder(Shared)"
+                        }
+                    ]
+                },
+                {
+                    "type": "script",
+                    "ignorePaths": [
+                        {
+                            "pattern": "@starts-with(_)"
+                        },
+                        {
+                            "pattern": "@folder(Shared)"
+                        }
+                    ]
+                }
+            ]
         }
-    ]
+    ],
+    "default": {
+        "ignore.styleUnderscorePrefix": true,
+        "styleEnabled": true,
+        "scriptEnabled": true,
+        "imageEnabled": true,
+        "distroEnabled": true,
+        "paths": [
+            {
+                "name": "Style",
+                "value": "<project>//STYLE"
+            },
+            {
+                "name": "StyleOut",
+                "value": "<project>//wwwroot//STYLE"
+            },
+            {
+                "name": "Script",
+                "value": "<project>//SCRIPT"
+            },
+            {
+                "name": "ScriptOut",
+                "value": "<project>//wwwroot//SCRIPT"
+            },
+            {
+                "name": "Image",
+                "value": "<project>//IMAGE"
+            },
+            {
+                "name": "ImageOut",
+                "value": "<project>//wwwroot//IMAGE"
+            },
+            {
+                "name": "Distro",
+                "value": "<project>//CONTENT"
+            },
+            {
+                "name": "DistroOut",
+                "value": "<project>//wwwroot//CONTENT"
+            }
+        ]
+    }
 }
